@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure In JavaScript</title>
+</head>
+<body>
+    <script>
+        // A closure is a function having access to the parent scope. It preserve the data from outside.
+/* 
+        var i = 20;
+        function first(){
+            var j = 30;
+            document.write(j + "<br>");
+            document.write(i + "<br>"); // we can easily call i inside a function. 
+        }
+        first(); */
+
+        // A closure is an inner function that has access to the outer function variable.
+
+       /*  function second(){
+            var f = "f is local variable of outer function";
+            document.write(f + "<br>");
+           // document.write(g + "<br>"); it is not closure we can not access innner function variable
+           // outer function can not access any inner function.
+            function innerfunction(){
+                var g = "g is local varaible of inner function";
+                document.write(g + "<br>");
+                document.write(f + "<br>"); // it is closure
+            }
+            innerfunction();
+            //document.write(g + "<br>"); it can not access outer function.
+            document.write(f + "<br>");
+        }
+        second();  */
+
+
+        // For every closure we have three scopes:- 1> localscope(own scope) 2>outer function scope 3> Global scope
+
+        
+    </script>
+</body>
+</html>
