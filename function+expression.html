@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expression</title>
+</head>
+<body>
+    <script>
+        // When we create a function and assign it to variable, known as function expression.
+        // You can not call function before function definition.
+        // Function expression in JavaScript are not hoisted , unlike function declaration.
+
+        // function declaration
+        fff();  // we can call first without declaration 
+        function fff(){
+            document.write(" khan bhai" + "<br>");
+        }
+        fff(); // we can call after declaration
+
+        
+        // function expression
+        // but in function expression we can not call before declaration
+        // ghh(); here we can not call it give error
+        var ghh = function hhh(){
+            document.write("hello everyone");
+        }
+        ghh();
+    </script>
+</body>
+</html>
