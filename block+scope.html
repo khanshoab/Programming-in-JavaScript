@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Scope</title>
+</head>
+<body>
+    <script>
+        // Block scope
+        if(true) {
+            var i = 10; // local varaqaible
+            document.write(i + "<br>");
+        }
+        document.write(i + "<br>");
+        
+        // let it is used only block statement
+        if(true) {
+            let g = 10; // local varaqaible
+            document.write(g + "<br>");
+        }
+        // document.write(g + "<br>");  it is do not run 
+
+        // const it is used only block statement
+        if(true) {
+            let h = 10; // local varaqaible
+            document.write(h + "<br>");
+        }
+       // document.write(h + "<br>");   it is do not run 
+
+    </script>
+</body>
+</html>

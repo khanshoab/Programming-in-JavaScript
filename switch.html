@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statement in javascript</title>
+</head>
+<body>
+    <script>
+       /*  var day = 4;
+        switch(day){
+           case 1:
+           document.write("Sun");
+           break;
+           case 2:
+           document.write("Mon");
+           break;
+           case 3:
+           case 4:
+           document.write("tue");
+           break; 
+        } */
+        var day = "sun";
+        switch(day){
+           case "mon":
+           document.write("working day");
+           break;
+           case "tue":
+           document.write("half day");
+           break;
+           case "sat":
+           case "sun":
+           document.write("holiday");
+           break; 
+           default:
+           document.write("write proper day")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diffrence Between Rest Parameter and Arguments</title>
+</head>
+<body>
+    <script>
+        // three main diffrence between restparameter   and arguments object.
+
+        //1. rest parameter are only thre ones that haven't been given separate name, while the argument object contains all arguments passed to the function.
+         
+        // Rest Pararmeter
+        function sho(a , ...args){
+            console.log("a:" + a);
+            console.log(args);
+        }
+        sho(10,20,30,40,50);
+
+        // Arguments Object
+        function shoo(a){
+            console.log("a:" + a);
+            console.log(arguments);
+        }
+        shoo(10,20,30,40,50);
+
+        //2. The arguments object is not a real array, while rest parameter are array instance , meaning method like sort, map, forEach, or pop can be applied on it directly.
+
+        //3. The arguments object has additional functionality specific to itself (like the callee property).
+
+
+    </script>
+</body>
+</html>

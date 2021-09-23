@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scope in JavaScript</title>
+</head>
+<body>
+    <script>
+        // Two types of varaible 
+        // Global and Local
+
+        // Global Varaibles
+        // A varaible that is declared outside a function definition is a global variable, and its value is accessible and modifiedable throughout your program. 
+        // In web browser, global variables are deleted when you close the browser window, but remain available to new pages loaded into the same window.
+        // *****  Global variable  **********////
+        // Global varaible accessible anywhere
+
+      /*   var i = "Global Variable";
+        function add(){
+            document.write(i + "<br>");   // inside fnction call
+        } 
+        add();
+        document.write(i + "<br>");    // outside the function
+
+         // calling in other function also
+        function sub(){
+            document.write(i + "<br>");  
+        } 
+        sub(); */
+
+
+       // ************* Local Varaible **********//
+       // A varaible that can declared inside a function definition is local. It is created and destroyed every time the function is executed, and it cannot be accessd by any code outside th efunction .Inside a function , if a varaible has not been declared with var it is created as aglobal varaible.
+       // Local varaible creating
+      /*  function abb(){
+           var t = "Local Varaible" // local varaible 
+           document.write(t + "<br>");
+       }
+       abb();
+       document.write(t + "<br>");   // t is not defined is give error. we cannot call local varaible out side 
+
+       function ggg(){
+        document.write(t + "<br>");   // We can also not call the local varaible out side it
+       }
+       ggg()
+
+       if(true){
+        document.write(t + "<br>"); // also we cannoot call in block
+       } */
+
+
+
+      // other e.g of Global varaible
+      /* function ikk(){
+          k = "Global Varaible"; // it is global varabile because it is not var it defined globally
+          document.write(k + "<br>");
+      }
+      ikk();
+     
+      // other function
+      function lll(){
+        document.write(k + "<br>");
+      }
+      lll();
+
+      // in block
+      if(true){
+        document.write(k + "<br>");
+      } */
+
+
+
+      // ************ Local Scope ***********//
+    //   If there is function  inside a function the inner function can access outer function varaible but outer function can not access function varaible.
+    // function arguments work as local varaibles inside functions.
+    
+     function rrr(){
+         // local varaible
+         var g = "local g varaible";
+         document.write(g + "<br>");
+        //  document.write(s + "<br>"); // it does not give out put it give error
+         function innerfun(){
+             // local varaible
+             var s = "hello i am local inside";
+             document.write(s + "<br>");
+             document.write(g + "<br>");
+
+         }
+         innerfun();
+     }
+     rrr();
+
+    </script>
+</body>
+</html>

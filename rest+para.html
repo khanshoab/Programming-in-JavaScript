@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter in JavaScript</title>
+</head>
+<body>
+    <script>
+        // Rest Parameter
+        // The rest parameter allows to represent an indefinite number of arguments as an array
+        // syntex (...args)
+        // The rest operator must be the last parameter to a function
+
+       /*  function show(...args){  // we can write any thing at the place of args 
+            document.write(args);
+        }
+        show(10,20,30,40,50); */
+
+        // rbg is array
+        function shon(a,...rbg){ 
+            document.write(a + "<br>");
+            document.write(rbg + "<br>");
+            document.write(rbg[0] + "<br>");
+            document.write(rbg[3] + "<br>");
+        }
+        shon(10,20,30,40,50);
+
+        // always write rest parameter at last position
+       /*  function show(a,b,c,...rbgs){ 
+            document.write(a + "<br>");
+            document.write(b + "<br>");
+            document.write(c + "<br>");
+            document.write(rbgs + "<br>");
+            document.write(rbgs[0] + "<br>");
+            document.write(rbgs[3] + "<br>");
+        }
+        show(1,2,3,4,5,6,7,8); */
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Argument Missing</title>
+</head>
+<body>
+    <script>
+        // if a function is called with missing arguments the missing values are set to undefiend.
+        // function argument missing
+        function add(a, b, c){
+            document.write("A: " + a + "b: " + b + "C: " + c );
+        } 
+        add(100,200,300);
+         // mmissing argument 
+        function add(a, b, c){
+            document.write("A: " + a + "b: " + b + "C: " + c );
+        } 
+        add(100,200);
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>argument object</title>
+</head>
+<body>
+    <script>
+        
+        // The argument object an array of the arguments used when the function was called.
+        // This object contain an entry for each argument passed to the function , the first entrys index 
+        // strating at 0. the argument object is not an array it is similar to an array.
+        // but does not have any array properties except length.
+        function ddd(num1){
+              document.write(num1);
+        }
+        ddd("language <br>");
+
+        // we can also write with index position
+        function ddd(num1){
+              document.write(arguments[0]);
+        }
+        ddd("world <br>");
+
+        /* function dd(num1,num2){
+            // document.write(num1);
+            // document.write(num2);
+              document.write(arguments[0]);
+              document.write(arguments[1]);
+        }
+        dd("Hindi <br>","english"); */
+
+        /* function dd(num1,num2){
+              // we can change the arguments value internally change only 
+              arguments[0] = "Arabic";
+              document.write(arguments[0] + " ");
+              document.write(arguments[1]);
+        }
+        dd("Hindi ","english"); */
+        
+       /*  // find length of arguments and count
+        function ddh(no1 , no2){
+
+            document.write(arguments.length + " ")
+        }
+        ddh("google" , "chrome <br>"); */
+       /*  // we can also passed using var
+        function ddh(no1 , no2){
+            var l = arguments.length;
+            document.write(l)
+        }
+        ddh("google" , "chrome"); */
+
+        /* function www(){
+            document.write(arguments.length);
+        }
+        www("aaa","bbb") */
+        /* // when display multiple arguments
+        function dis(){
+            for (var i = 0; i < arguments.length; i++){
+                document.write(arguments[i] + " ");
+            }
+        }
+        dis("hello" , "hhhhow" , "hooo"); */
+
+        /* function dis(){
+            arguments[0] = "khan";
+            arguments[1] = "khan";
+            for (var i = 0; i < arguments.length; i++){
+                document.write(arguments[i] + " ");
+            }
+        }
+        dis("hello" , khan , 687); */
+       /* // using collee
+        function dis(num1 , num2 , num3){
+                document.write(arguments.callee);
+        }
+        dis("hello" ," khan" , 687); */
+
+    </script>
+</body>
+</html>
