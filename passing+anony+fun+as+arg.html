@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing Anonymous Function as Argument</title>
+</head>
+<body>
+    <script>
+        // Passing Anonymous Function as Argument.
+  /*       function deep(myname){
+            return myname;         
+        }
+        document.write(deep("Java-script")); */
+
+        //
+        function deep(myname){
+            return myname();         
+        }
+        document.write(deep(function(){
+                        return "language is world"
+        } ));
+        
+    </script>
+</body>
+</html>
