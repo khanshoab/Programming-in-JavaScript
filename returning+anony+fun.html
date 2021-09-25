@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returning Anonymous Function</title>
+</head>
+<body>
+    <script>
+        // Returning Anonymous Function
+        function deep(a){
+            return function(b){
+                return a+b;
+                
+            };
+        }
+        // document.write(deep(10));
+        var ggh = (deep(20));
+        document.write(ggh(20));
+        
+    </script>
+</body>
+</html>
