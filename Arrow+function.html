@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        // An arrow function expression (previously known as fat arrow function) has a shorter syntax compared to function  expression.function are always anonymous.
+        
+       /*  // Function Expression
+        var myself1 = function hello(){
+            document.write("language like javascript");
+        };
+        // Anonymous Function
+        var myself2 = function(){
+            document.write("do not like javascript");
+        }; */
+
+        // Arrow Function
+        // We can not call before defining
+        // myself3(); it give error
+
+       /*  var myself3 = () =>{       // arrow symbol it is must be same line
+            document.write("I like javascript language");
+        };
+        myself3(); */
+/* 
+        // Arrow function with parameter
+        var myname = (a) => {  // when one parameter we can also write without parenthesis
+            document.write(a);
+        };
+        myname(10); */
+
+        
+       /*  // Arrow function with parameter
+        var myname = (a , b) => {  
+            document.write(a+ " " +b);
+        };
+        myname(10,20); */
+
+        /*  // Arrow function with blank parenthesis.
+         var myname = () => {   // when no parameter we must write blank parenthesis.
+            document.write("hello");
+        };
+        myname(); */
+
+
+        /*  // Arrow function with default parameter
+         var myname = (a ,b=10) => {   // default parameter
+            document.write(a+ "<br> " +b);
+        };
+        myname(5); */
+         
+       /*  // Arrow function with Rest parameter
+        var myname = (a ,...args) => {   //
+            document.write(a+ "<br> " +args);
+        };
+        myname(5,20,30,40,50,60); */
+
+       /* // normal 
+        var myname = a =>  document.write(a);
+        
+        myname(5);  */
+
+       /*  // it is not run in squencing
+        // when we write multiple statement then must use carly braceses {}
+        var myname = a =>  document.write(a + "<br>");
+        document.write("khan bhai");
+        
+        myname(5);  */
+
+        /* // it give proper squencing output
+        var myname = a => { 
+            document.write(a + "<br>");
+        document.write("khan bhai");
+        };
+        myname(5);  */
+
+        // 
+       /*  // function expression
+        var myho = function does(a){
+            return a;
+        };
+         // which function requried less no. of code
+        // Anonymous function
+        var myhu = function (b){
+            return b;
+        };
+      
+        // Arrow function
+        var mygod = c => {return c; };
+
+        // Arrow function
+        var mygod = c => c ; 
+        document.write(mygod(10)); */
+
+        /* // Arrow function
+        var mygod = (a,b) => a+b ; 
+        document.write(mygod(10,20));
+
+        // Arrow function
+        // it give error
+        var mygod = (a,b) => {a+b} ; 
+        document.write(mygod(10,20)); */
+/* 
+        var myfg = b => b;  // work
+        var mygh = c => {c} // do not work
+        var mygh = c => { return c;} //  work
+ */
+
+        // function declaration
+        function how(a,b){
+            return a+b;
+        }
+        document.write( how(10,20));
+
+        // Arrow function declaration
+          (a,b) => a+b;
+
+    </script>
+</body>
+</html>
