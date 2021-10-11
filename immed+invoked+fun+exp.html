@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immediately Invoked Function in JavaScript (IIFE)</title>
+</head>
+<body>
+    <script>
+        // IIFE it is a javascript function that runs as soon as it is defiend.
+
+        // It is a design pattern which is also known as Self-Executing Anonymous function and contain two major parts . The first is the anonymous function with lexical scope enclosed within the grouping operator().This prevents accessing variables within the IIFE idiom as well as polluting the global scope .
+
+        //The second part is creating the immediatly executing function expression(), through which the javascript engine will directly interpret th efunction.
+
+        // 1> Avoid creating global variable and function.
+        // 2> As it doesn't variable and function globally so there will be no name confilicts.
+        // 3> Scope is limited so that particular function.
+
+
+       /*  // creating IIFE function
+        (function () {document.write("hello")}) (); */
+         
+
+        (function () {
+            var a = 10;
+            document.write(a);
+        }) ();
+        //  document.write(a); we can not access this var outside the fucntion.
+       
+    </script>
+</body>
+</html>
