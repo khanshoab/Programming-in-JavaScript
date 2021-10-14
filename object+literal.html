@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literal</title>
+</head>
+<body>
+    <script>
+        ///  Using object literal  ////
+        // Declaration of object
+        
+        let rupy = {};
+        rupy ['One hundred'] = 100;
+        rupy ['Two hundred'] = 200;
+        rupy ['Three hundred'] = 300;
+        document.write( rupy ['One hundred'],rupy ['Two hundred']);
+            
+        // Also can write using dot property
+        let monday = {};
+        monday.khan = 10;
+        monday.shaikh = 10;
+        monday.ansari = 10;
+        document.write(monday['khan']);
+        document.write(monday.ansari);
+
+        // 
+        let now = {};
+        now ['today'] = 10;
+        now ['yesterday'] = 20;
+        now ['holiday'] = function(){ return(10+20+30);};
+        // ALSO CAN WRITE IN THIS WAY
+        // now.holiday = function(){ return(10+20+30);};
+
+        document.write(now.holiday());
+        document.write(now ['holiday']());
+
+
+        let fess = 
+           {
+            khan:100,
+            ansari:200,
+            shaikh:300,
+            "king khan":400
+           };
+        document.write(fess['khan']);
+        document.write(fess['king khan']);
+
+
+        var mobile = {vivo:100,total:function() {
+            return(100+200)
+        }};
+        document.write(mobile.total());
+        document.write(mobile['total']());
+    </script>
+</body>
+</html>
