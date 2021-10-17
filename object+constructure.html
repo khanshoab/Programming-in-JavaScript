@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT CONSTRUCTURE</title>
+</head>
+<body>
+   <script>
+      /*  // Using Object Constructure
+       let book = new Object();
+       book ["math"] = 100;
+       book ["english"] = 200;
+       book ["hindi"] = 300;
+       document.write(book ["english"] +"<br>");
+   */
+
+         // Using Object Constructure
+       let book = new Object();  
+       // it similar to 
+       // let book = {};
+       book ["math"] = 100;
+       book ["english"] = 200;
+       book ["hindi"] = 300;
+       book ["total"] = function(){ return(100+200+300);};
+       document.write(book.total() + "<br>");
+  
+
+       // also can write dot opretor
+       let pen = new Object();
+       pen.math = 100;
+       pen.hindi = 200;
+       pen.english = 300;
+      document.write(pen.hindi);
+
+   </script>
+</body>
+</html>
