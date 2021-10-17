@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Oject Methods</title>
+</head>
+<body>
+    <script>
+        // Object members that are function are called methods. These are accessed with dot operator applied to an object alternative to the dot operator is the array [] operator.
+         
+        var cap = {
+            big: 100,
+            small: 200,
+            medium: 300,
+            total: function() { return(100+200+300);}
+        };  // it is method
+        document.write(cap.total());
+        document.write(cap["total"]());
+    </script>
+</body>
+</html>
