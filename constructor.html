@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor In JavaScript</title>
+</head>
+<body>
+    <script>
+        // object instance are created with constructor, which are basically special function that prapare new instance of  an object for use.
+         
+       /*  function Mobile (){
+            this.model = 'proplay';
+            this.price = function (){
+                document.write(this.model + " " + "Price Rs. 4000");
+            }
+        }
+        let samsung = new Mobile();
+        let nokia = new Mobile();
+        samsung.price();
+        nokia.price(); */
+
+        // Constructor With Parameter
+
+        function Mobile (model_no){
+            this.model = model_no;
+            this.price = function (){
+                document.write(this.model + " " + "Price Rs. 4000");
+            }
+        }
+        let samsung = new Mobile('Galaxy');
+        let nokia = new Mobile('   opera-65');
+        samsung.price();
+        nokia.price();
+
+    </script>
+</body>
+</html>
